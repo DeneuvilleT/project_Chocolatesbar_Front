@@ -1,0 +1,668 @@
+.product {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin-bottom: 3vh;
+   width: 100vw;
+   color: #333;
+}
+
+.product em,
+.detail em {
+   margin: 1vh 0;
+   font-size: 2rem;
+   color: #9c4b04;
+}
+
+.product hr {
+   width: 80vh;
+}
+
+.product cite {
+   padding: 0 10px;
+}
+
+.product>section>div>h1 {
+   letter-spacing: 2.5px;
+   padding: 1.5vh 1.5vw;
+   text-align: center;
+   font-weight: normal;
+   font-size: 3rem;
+}
+
+
+/* Header Main */
+/* ************************************************************ */
+/* Main */
+.product>section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   gap: 3vh;
+}
+
+/* Title */
+.product section div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+   padding: 2vh 2vw 0 2vw;
+}
+
+/* Search bar */
+.product section form {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   width: 50%;
+   max-width: 500px;
+   min-width: 300px;
+
+   border: none;
+   padding: 8px 12px;
+   border-radius: 5ex;
+   background-color: rgba(128, 128, 128, 0.226);
+   box-shadow: 0 14px 10px rgba(0, 0, 0, 0.075),
+      0 4px 10px rgba(0, 0, 0, 0.048);
+}
+
+.product section form input {
+   padding-left: 10px;
+   font-size: 1.8rem;
+}
+
+.product section form input,
+.product section form button {
+   background-color: rgba(245, 245, 245, 0);
+   border: none;
+}
+
+/* Btn Help */
+.product section>button,
+.product>form button {
+   letter-spacing: 1.5px;
+   line-height: 150%;
+
+   font-size: 1.8rem;
+   font-weight: 375;
+
+   text-align: center;
+   color: whitesmoke;
+
+   background: #7a3b04;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 5ex;
+   border: none;
+
+   min-width: 235px;
+   max-width: 300px;
+   padding: 12px 21px;
+}
+
+
+/* Result */
+/* ************************************************************ */
+/* Main */
+
+/* Result */
+.product section:nth-child(2) {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   height: auto;
+   min-height: 400px;
+   gap: 3vw;
+   padding: 2vh 4vw;
+
+   width: 70%;
+   max-width: 1500px;
+}
+
+/* Btn Add Cart  */
+.product section:nth-child(2) article svg {
+   position: fixed;
+   top: 95%;
+
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 50%;
+   background: #C29264;
+   color: whitesmoke;
+
+   height: 7%;
+   width: 13%;
+   padding: 10px;
+   margin-left: 93%;
+}
+
+.product svg:hover,
+.product button:hover,
+.product section:nth-child(2) article:hover {
+   transform: scale(0.98);
+   cursor: pointer;
+}
+
+/* Arrow Navigation */
+.product>div {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   justify-content: space-between;
+
+   width: 50%;
+   margin: 3vh auto;
+}
+
+.product>div svg:hover {
+   transform: scale(0.92);
+   padding: 10px 11px;
+   border-radius: 50%;
+   background: #44280d36;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   color: #333;
+}
+
+/* Page Count */
+.product>div p {
+   font-weight: 500;
+   font-size: 2.5rem;
+}
+
+
+
+/* Advanced */
+/* ************************************************************ */
+/* Main */
+.product>form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   background-color: rgba(0, 0, 0, 0);
+   box-shadow: none;
+   padding: 3vh 0 6vh 0;
+   width: 100%;
+   gap: 5vh;
+}
+
+.product>form label {
+   padding: 8px;
+   min-width: 75px;
+   text-align: center;
+}
+
+.product input[type="range"] {
+   cursor: pointer;
+}
+
+.product label,
+.product select,
+.product select option {
+   border: none;
+   cursor: pointer;
+   font-size: 2rem;
+   border-radius: 5ex;
+
+   min-height: 45px;
+   background-color: rgba(150, 150, 150, 0.226);
+   box-shadow: 0 14px 20px rgb(0, 0, 0, 0.12),
+      0 14px 25px rgba(0, 0, 0, 0.20);
+}
+
+.product form select {
+   padding: 0 10px;
+}
+
+.product form p {
+   text-align: center;
+   font-size: 2.3rem;
+   font-weight: 400;
+   padding: 0 20px;
+   margin: auto;
+}
+
+
+/* Detail */
+/* ************************************************************ */
+/* Main */
+.detail {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin: 1.5vh auto 5vh auto;
+   color: #333;
+}
+
+.detail>div {
+   margin-bottom: 5vh;
+}
+
+.detail>div h1 {
+   font-weight: 425;
+   letter-spacing: 1px;
+   padding: 0 1vw;
+   text-align: center;
+}
+
+.detail>div h1 span {
+   text-transform: capitalize;
+}
+
+.detail section:nth-child(2) {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   gap: 2vh;
+   width: 100vw;
+}
+
+.detail>section article {
+   width: 300px;
+   height: 600px;
+}
+
+/* Data Bar Chocolate*/
+.detail>section article h1 {
+   font-size: 5.6rem;
+   padding-left: 30%;
+}
+
+.detail>section article h3 {
+   font-size: 3.25rem;
+}
+
+.detail>section article b {
+   font-size: 2.5rem !important;
+}
+
+.detail>section article p {
+   font-size: 2rem;
+}
+
+.detail>section legend {
+   padding: 1vh 1vw;
+}
+
+.detail>section section:nth-child(1) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   border-right: #333 groove 1px;
+   max-width: 650px;
+   padding: 0;
+   flex: 1;
+   gap: 2vh;
+}
+
+.detail section section:nth-child(2) div:nth-child(1) {
+   width: 100%;
+}
+
+.detail section:nth-child(2) div:nth-child(1) h1 {
+   font-weight: 500;
+   font-size: 4rem;
+}
+
+.detail section:nth-child(2) p {
+   font-size: 2rem;
+   font-weight: 550;
+   text-align: left;
+}
+
+.detail section:nth-child(2) p>span {
+   padding-left: 3%;
+   font-weight: normal;
+}
+
+.detail section:nth-child(2) hr {
+   margin: 6% auto;
+   width: 90%;
+}
+
+
+/* View Comment */
+/* ************************************************************ */
+/* Main */
+/* Left Container */
+.detail section section:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+
+   padding: 0 3vw;
+   width: 100%;
+   min-height: 600px;
+   min-width: 300px;
+   max-width: 800px;
+}
+
+/* Container comments */
+.detail section section:nth-child(2) section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+
+   max-height: 1000px;
+   width: 100%;
+   padding: 0 1vw 0 0;
+
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.detail section>section:nth-child(2)>section>article {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 2%;
+   width: 90%;
+   height: auto;
+}
+
+.detail section section:nth-child(2) section article p {
+   font-weight: normal;
+   text-align: center;
+   margin: auto;
+   width: 100%;
+
+   padding: 1vh 1vw;
+   border-radius: 5ex;
+   background-color: rgba(94, 57, 1, 0.144);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detail section section:nth-child(2) section article h4 {
+   font-weight: 450;
+   font-style: italic;
+   font-size: 2.5rem;
+   width: 35%;
+   min-width: 135px;
+   line-height: 80%;
+}
+
+.detail section section:nth-child(2) section article h4 span {
+   font-weight: 400;
+   font-size: 1.4rem;
+   color: grey;
+}
+
+.detail section:nth-child(2) div:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+
+   font-size: 3rem;
+   width: 100%;
+   gap: 2vh;
+}
+
+.detail section:nth-child(2) div:nth-child(2) b {
+   font-size: 3rem;
+   font-weight: 450;
+   color: #623003;
+}
+
+.detail section>section:nth-child(2)>div:nth-child(1)>p:nth-child(2) {
+   text-transform: capitalize;
+}
+
+/* Prix */
+.detail section section:nth-child(2) div:nth-child(2) div:nth-child(1) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1vh;
+}
+
+/* Arrow comment */
+.detail section section:nth-child(2) div:nth-child(2) div {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   font-size: 1.9rem;
+   gap: 1vw;
+}
+
+.detail section section:nth-child(2) div:nth-child(2) div:nth-child(2):hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.detail button {
+   letter-spacing: 1.5px;
+   line-height: 150%;
+
+   font-size: 1.8rem;
+   font-weight: 375;
+
+   text-align: center;
+   color: whitesmoke;
+
+   background: #7a3b04;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 5ex;
+   border: none;
+
+   min-width: 235px;
+   max-width: 300px;
+   padding: 12px 21px;
+}
+
+.detail svg:hover,
+.detail button:hover {
+   transform: scale(0.95);
+   cursor: pointer;
+}
+
+
+/* AddComment */
+/* ************************************************************ */
+/* Main */
+.detail section section:nth-child(2) section div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-end;
+
+   gap: 0.5vw;
+   width: 100%;
+}
+
+.detail form {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+
+   width: 100%;
+}
+
+.detail form button {
+   min-width: 0;
+   border: none;
+   color: #333;
+   box-shadow: none;
+   border-radius: none;
+   padding: 1vh 1vw 0 1vw;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.detail form textarea {
+   width: 130%;
+   height: 12vh;
+
+   resize: none;
+
+   font-family: 'Jost*';
+   font-size: 1.6rem;
+
+   border-radius: 5px;
+   padding: 1vh 1vw;
+   border: none;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detail section section:nth-child(2) section div svg {
+   width: 28px;
+   height: 28px;
+}
+
+.detail section>section:nth-child(2)>div:nth-child(1)>p:nth-child(2) {
+   color: #9c4b04;
+   font-weight: 450;
+   font-size: 2.5rem;
+   margin-bottom: 1vh;
+   letter-spacing: 1px;
+}
+
+.detail section section:nth-child(2) section div svg:nth-child(1),
+.detail section section:nth-child(2) section div svg:nth-child(2),
+.detail section section:nth-child(2) section div svg:nth-child(3) {
+   padding: 0 1vw 1vh 1vw;
+}
+
+
+@media all and (max-width: 1215px) {
+
+   /* Product */
+   .product>section,
+   .product>form {
+      gap: 8vh;
+   }
+
+   .product>section div {
+      gap: 5vh;
+   }
+
+   .product section:nth-child(2),
+   .product>div {
+      box-shadow: none;
+   }
+
+   /* Detail */
+   .detail section section:nth-child(2) section {
+      overflow-y: auto;
+
+      height: 100%;
+      width: 100%;
+   }
+
+   .detail section {
+      width: 100%;
+   }
+
+   .detail section>section:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+   }
+
+   /* Compo */
+   .detail>section legend {
+      width: 60%;
+      padding: 4vh 0;
+      text-align: left;
+      margin: auto;
+   }
+
+   .detail section>section:nth-child(2) div p {
+      text-align: center;
+      width: 100%;
+   }
+
+   .detail section:nth-child(2) div:nth-child(1) h1 {
+      text-align: center;
+   }
+
+   .detail>section section:nth-child(1) {
+      margin: auto;
+      padding: 2vh 5vw;
+      border: none;
+   }
+
+   /* Comment */
+   .detail section>section:nth-child(2)>div:nth-child(1)>div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .detail section section:nth-child(2) section p,
+   .detail section:nth-child(2) div:nth-child(2) p {
+      margin: auto;
+      text-align: center;
+      font-size: 1.70rem;
+   }
+
+   .detail section:nth-child(2) p>span {
+      padding-left: 2%;
+   }
+
+   .detail form textarea {
+      width: 125%;
+      padding: 1vh 2vw;
+   }
+}
+
+@media all and (max-width: 545px) {
+
+   .product section:nth-child(2),
+   .product>div {
+      width: 90%;
+      box-shadow: none;
+   }
+
+   .product section:nth-child(2) svg {
+      display: none;
+   }
+
+   .product p,
+   .product option,
+   .product label {
+      font-size: 2rem;
+   }
+
+   .detail form textarea {
+      width: 140%;
+   }
+
+}

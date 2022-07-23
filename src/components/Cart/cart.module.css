@@ -1,0 +1,309 @@
+.cart {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   padding-bottom: 5vh;
+   color: #333;
+   width: 100vw;
+}
+
+.cart h1 {
+   letter-spacing: 1.5px;
+   padding: 0 1.5vw 5vh 1.5vw;
+   text-align: center;
+   font-weight: normal;
+}
+
+.cart h2 {
+   font-weight: 500;
+   text-align: center;
+}
+
+
+/* Main Content */
+.cart section:nth-child(2) {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   gap: 2vh;
+   width: 80%;
+   max-width: 1400px;
+}
+
+/* Article */
+.cart section section:nth-child(1) {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+
+   background-color: white;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+   min-height: 560px;
+   padding: 1vh 1vw;
+   flex: 2;
+}
+
+.cart section section:nth-child(1) article {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+
+   background-color: rgb(245, 245, 245);
+   padding: 0.25vh 1vw;
+   margin-bottom: 1vh;
+   width: 100%;
+}
+
+.cart section section:nth-child(1) article>a {
+   display: block;
+   font-weight: 450;
+   font-size: 2rem;
+
+   width: 30%;
+   margin: auto;
+   text-align: center;
+   color: #b85601;
+   text-transform: capitalize;
+}
+
+.cart section section:nth-child(1) article a::first-letter {
+   text-transform: uppercase;
+}
+
+.cart section section:nth-child(1) article a:hover {
+   color: black;
+}
+
+.cart section section:nth-child(1) article svg:hover {
+   color: #b07f00;
+   transform: scale(0.95);
+   cursor: pointer;
+}
+
+/* Item cart */
+.cart section section:nth-child(1) article>div {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap;
+
+   margin: auto;
+   width: 50%;
+}
+
+/* Trash, price, quantity */
+.cart section section:nth-child(1) article div div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: nowrap;
+
+   min-width: 110px;
+}
+
+.cart section section:nth-child(1) article>div>p {
+   min-width: 70px;
+   text-align: center;
+   margin: auto;
+}
+
+
+
+/* Price detail & Infos */
+.cart section section:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   gap: 2vh;
+   flex: 0.5;
+}
+
+.cart section section:nth-child(2)>aside:nth-child(1),
+.cart section section:nth-child(2)>aside:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+
+   background-color: white;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   min-width: 290px;
+   max-width: 350px;
+   width: 100%;
+}
+
+
+/* Price detail */
+.cart section section:nth-child(2) aside:nth-child(1) {
+   padding: 1.5vh 1vw;
+   gap: 1vh;
+}
+
+.cart section section:nth-child(2) aside:nth-child(1) hr {
+   margin: auto;
+   width: 70%;
+}
+
+.cart section section:nth-child(2) aside:nth-child(1) h4 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.cart section section:nth-child(2) aside:nth-child(1) a {
+   text-align: center;
+   color: #333;
+}
+
+.cart section section:nth-child(2) aside:nth-child(1) a:hover {
+   color: #b85601;
+}
+
+.cart section section:nth-child(2) aside:nth-child(1) span {
+
+   font-weight: 500;
+}
+
+.cart section section:nth-child(2) aside:nth-child(1) button {
+   font-style: normal;
+   line-height: 150%;
+   letter-spacing: 1.5px;
+   font-size: 1.5rem;
+
+   text-align: center;
+   color: whitesmoke;
+   cursor: pointer;
+
+   background: #7a3b04;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 30px;
+   border: none;
+
+   width: 70%;
+   height: auto;
+   margin: auto;
+   margin-top: 1vh;
+   padding: 10px 20px;
+}
+
+.cart button:hover {
+   transform: scale(0.95);
+}
+
+
+/* Infos */
+.cart section section:nth-child(2) aside:nth-child(2) {
+   padding: 1.5vh 1vw;
+   gap: 3vh;
+}
+
+.cart section section:nth-child(2) aside:nth-child(2) p {
+   text-align: center;
+   padding: 0 1vw;
+}
+
+.cart section section:nth-child(2) aside:nth-child(2) div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+   gap: 1vw;
+}
+
+.cart section section:nth-child(2) aside:nth-child(2) div:nth-child(1)>svg,
+.cart section section:nth-child(2) aside:nth-child(2) div:nth-child(3)>svg {
+   padding-left: 4%;
+}
+
+/* Clear Trash */
+.cart section section:nth-child(1) button {
+   border: none;
+   cursor: pointer;
+   text-decoration: underline;
+   padding: 1vh 0;
+   background-color: rgba(245, 245, 245, 0);
+}
+
+/* Payment */
+
+.cart section:nth-child(3) {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+
+   gap: 1.5vw;
+   width: 80%;
+   margin-top: 5vh;
+}
+
+.cart section:nth-child(3) form {
+   border-left: #333 solid 1px;
+   border-right: #333 solid 1px;
+   padding: 0 3vw;
+}
+
+
+@media all and (max-width: 1281px) {
+
+   .cart section section:nth-child(1) article a {
+      width: 100%;
+      min-width: none;
+   }
+
+   .cart section:nth-child(2) {
+      width: 95%;
+   }
+
+   .cart section section:nth-child(2) aside:nth-child(1) {
+      padding: 1.5vh 3vw;
+
+   }
+
+   .cart section section:nth-child(2) aside:nth-child(2) {
+      padding: 1.5vh 3vw;
+   }
+
+   .cart section section:nth-child(1) article>div {
+      padding-top: 3vh;
+   }
+
+   .cart section section:nth-child(1) article div div {
+      justify-content: space-evenly;
+      min-width: none;
+   }
+
+   .cart section:nth-child(3) {
+      justify-content: center;
+      gap: 3vw;
+      width: 95%;
+      text-align: center;
+   }
+
+   .cart section:nth-child(3) form {
+      border: none;
+      padding: 2vh 0;
+   }
+
+}

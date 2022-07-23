@@ -1,0 +1,39 @@
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+
+
+   width: 100vw;
+   height: auto;
+}
+
+.header figcaption {
+   flex: 1;
+   margin-top: -2px;
+   margin-left: -2px;
+   margin-right: 4vw;
+}
+
+.header nav {
+   flex: 1;
+}
+
+.header div {
+   flex: 1;
+}
+
+@media all and (max-width: 1025px) {
+   .header {
+      margin: auto;
+   }
+
+   .header figcaption>img {
+      width: 100%;
+      min-width: 222px;
+      max-width: 250px;
+   }
+}

@@ -1,0 +1,423 @@
+.login,
+.customer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   width: 100vw;
+}
+
+.login em,
+.customer em {
+   margin: 2vh 0;
+   font-size: 2rem;
+   color: #622f03;
+   text-align: center;
+}
+
+.login h1,
+.customer h1 {
+   letter-spacing: 1.25px;
+   padding: 5vh 1vw;
+   text-align: center;
+   font-weight: normal;
+}
+
+.customer h2 {
+   font-weight: 400;
+   padding: 4vh 0 8vh 0;
+   text-align: center;
+}
+
+/* .login a,
+.login a:visited {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+} */
+
+/* Banner */
+/* ************************************************************ */
+/* Main */
+.customer div:nth-child(2) {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+   flex-wrap: nowrap;
+
+   height: 17vh;
+   width: 55vw;
+   max-width: 1200px;
+
+
+   background-image: url('../../../assets/banner_profile.gif');
+   background-size: cover;
+   background-repeat: no-repeat;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   margin-bottom: 5vh;
+   border-radius: 5ex;
+
+   gap: 10vw;
+}
+
+.customer div figure {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: baseline;
+}
+
+.customer div figure img {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background-color: #622f03;
+   border: 5px #000000 outset;
+   box-sizing: border-box;
+   border-radius: 50%;
+
+   min-width: 250px;
+   max-width: 250px;
+
+   min-height: 270px;
+   max-height: 270px;
+   transition: all 0.2s ease;
+}
+
+.customer div:nth-child(2) figure svg {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background-color: #f5f5f5;
+   border-radius: 50%;
+
+   padding: 10px;
+   color: #a0a0a0;
+   cursor: pointer;
+}
+
+.customer div figure img:hover {
+   transform: scale(0.99);
+   filter: brightness(0.9);
+   cursor: pointer;
+}
+
+
+/* Hr Title */
+/* ************************************************************ */
+/* Main */
+.customer div:nth-child(3),
+.customer div:nth-child(6),
+.customer div:nth-child(7) {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap;
+
+   gap: 2vh;
+   max-width: 1400px;
+   margin: 3vh 1vw;
+}
+
+.customer hr {
+   width: 45vw;
+}
+
+.customer h4 {
+   font-weight: normal;
+   text-decoration: underline;
+}
+
+
+/* Profil */
+/* ************************************************************ */
+/* Main */
+.customer section:nth-child(4) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   width: 90%;
+   max-width: 550px;
+}
+
+.customer section:nth-child(4)>form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   width: 100%;
+}
+
+.customer section:nth-child(4)>form input {
+   max-width: 450px;
+   width: 100%;
+}
+
+.customer section:nth-child(4)>form input[type="submit"] {
+   max-width: 300px;
+}
+
+/* FirstName and LastName */
+/* City and Zip_Code */
+.customer section:nth-child(4) div:nth-child(3),
+.customer section:nth-child(4) div:nth-child(5) {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 0;
+   width: 100%;
+   gap: 1vw;
+}
+
+.customer section:nth-child(4) div:nth-child(3) p,
+.customer section:nth-child(4) div:nth-child(5) p {
+   flex: 1;
+}
+
+.customer section p {
+   text-align: center;
+   cursor: pointer;
+   margin-bottom: 1.1vh;
+   padding: 1vh 1vw;
+   color: #333;
+
+   width: 100%;
+   min-width: 230px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background: #FAFAFA;
+   border-radius: 5ex;
+}
+
+.customer section:nth-child(4)>div:nth-child(5)>p:nth-child(1) {
+   text-transform: uppercase;
+}
+
+.customer input::placeholder {
+   color: #333;
+}
+
+/* Change Picture */
+.customer div:nth-child(2) figure form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   position: absolute;
+   top: 40%;
+   right: 50%;
+}
+
+.customer div:nth-child(2) figure form input[type="file"] {
+   width: 300px;
+}
+
+/* Order */
+/* ************************************************************ */
+/* Main */
+.customer section:nth-child(8),
+.customer section:nth-child(7) {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   gap: 3vw;
+   margin: auto;
+   width: 60vw;
+}
+
+.customer section article {
+   margin-bottom: 5vh;
+   padding: 2.5vh 2.5vw;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background: #FAFAFA;
+   border-radius: 5px;
+   box-sizing: border-box;
+}
+
+.customer section article:hover {
+   cursor: pointer;
+   transform: scale(0.95);
+}
+
+.customer section article p {
+   color: #333;
+   width: auto;
+   box-shadow: none;
+   background: none;
+   border-radius: 0%;
+   margin-bottom: 0;
+   padding: 0;
+}
+
+
+/* Login/Logup */
+/* ************************************************************ */
+/* Main */
+.login form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   gap: 10px;
+}
+
+.login>section {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+   width: 25%;
+   max-width: 450px;
+   min-width: 320px;
+   padding: 3vh 2vw;
+   margin-bottom: 10vh;
+}
+
+.login>section section {
+   width: 100%;
+}
+
+.login form input,
+.customer form input {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background: #FAFAFA;
+   border-radius: 5ex;
+   border: none;
+
+   min-width: 250px;
+   max-width: 300px;
+
+   margin-bottom: 1.1vh;
+   padding: 1.5vh 1vw;
+}
+
+.login form label {
+   padding: 10px 20px;
+   color: #333;
+}
+
+.login a,
+.login a:visited {
+   display: flex;
+   justify-content: center;
+   color: #333;
+}
+
+.login form input[type="submit"],
+.customer form input[type="submit"] {
+   cursor: pointer;
+   background: #7a3b04;
+   font-size: 2rem;
+   letter-spacing: 2px;
+
+   padding: 1vh 0.5vw;
+   font-weight: 400;
+   color: whitesmoke;
+   margin: 2vh 0;
+}
+
+.login form input[type="submit"]:hover,
+.customer form input[type="submit"]:hover {
+   transform: scale(0.95);
+   font-weight: 400;
+}
+
+
+@media all and (max-width: 1281px) {
+
+   /* Banner */
+   .customer div:nth-child(2) {
+      height: 20vh;
+      margin: 10vh auto;
+      width: 100%;
+   }
+
+   .customer div figure {
+      margin: auto;
+   }
+
+   .customer section:nth-child(4) {
+      width: 80%;
+   }
+
+   .customer div:nth-child(2)>figure>svg,
+   .customer div:nth-child(3) svg,
+   .customer div:nth-child(6) svg,
+   .customer div:nth-child(7) svg {
+      display: none;
+   }
+
+   .customer div:nth-child(2) figure form {
+      position: absolute;
+      top: 60%;
+      right: auto;
+   }
+
+   .customer div:nth-child(3),
+   .customer div:nth-child(6),
+   .customer div:nth-child(7) {
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+   }
+
+   .customer div:nth-child(2) figure form {
+      position: absolute;
+      top: 50%;
+      right: auto;
+   }
+
+   .login form input,
+   .customer form input {
+      padding: 1.5vh 2.5vw;
+      width: 90%;
+   }
+
+   .login form input {
+      width: 120%;
+   }
+
+   .login section {
+      box-shadow: none;
+   }
+
+}
+
+@media all and (max-width: 540px) {
+
+   .customer div:nth-child(2) {
+      border-radius: 0%;
+      height: 30vh;
+      width: 100%;
+   }
+
+   .customer div:nth-child(2) figure form {
+      position: absolute;
+      right: auto;
+      top: auto;
+   }
+
+   .customer div figure {
+      padding: 0;
+   }
+
+   .customer section:nth-child(4) {
+      width: 90%;
+   }
+
+   .login section {
+      width: 100%;
+      padding: 0 auto;
+   }
+}
