@@ -43,6 +43,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  max-width: 1800px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
