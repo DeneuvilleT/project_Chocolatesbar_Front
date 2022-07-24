@@ -47,13 +47,12 @@
    border-radius: 3ex;
 
    margin-bottom: 5vh;
-   max-width: 1024px;
-   width: 60vw;
+   max-width: 1280px;
+   width: 80vw;
 
    min-height: 400px;
    height: 30vh;
 }
-
 
 .home figcaption {
    background-color: whitesmoke;
@@ -70,7 +69,6 @@
    width: 20vw;
    color: black;
 }
-
 
 @media all and (max-width: 1025px) {
 

@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import { useEffect } from 'react';
-import { getOrder } from '../../slices/datasSlices';
+import { useEffect, createRef } from 'react';
 import { detailOrder } from '../../api/user';
+import { useParams } from 'react-router-dom';
+import { getOrder } from '../../slices/datasSlices';
 
+import ViewPDF from 'react-to-pdf';
 import styles from '../Order/order.module.css';
 import dayjs from 'dayjs';
 import feve from '../../assets/feve.png';
@@ -13,6 +14,7 @@ const Order = ({ infos }) => {
 
    const { order } = useSelector((state) => ({ ...state.datas }));
 
+   const ref = createRef();
    const params = useParams();
    const dispatch = useDispatch();
 
@@ -24,13 +26,18 @@ const Order = ({ infos }) => {
    const displayOrder = async (id) => {
       if (infos.token) {
          const res = await detailOrder(id, infos.token);
-         return dispatch(getOrder(res.data.order));
+         dispatch(getOrder(res.data.order));
       };
    };
 
    return (
       <main className={styles.order} >
-         {order.length ? <section>
+
+         <ViewPDF targetRef={ref} filename={`facture numéro ${order[0]?.id_order}.pdf`} scale={1} >
+            {({ toPdf }) => (<button onClick={toPdf}>Télécharger la facture en PDF</button>)}
+         </ViewPDF>
+
+         {order.length ? <><section ref={ref} >
 
             <section>
                <img src={feve} alt="feve" />
@@ -58,7 +65,7 @@ const Order = ({ infos }) => {
                {order.map((elem) =>
                   <article key={elem.id} >
                      <h3>{elem.product_name}</h3>
-                     <p>{elem.quantity}</p>
+                     <p>{elem.quantity} {elem.quantity > 1 ? ' Tablettes' : ' Tablette'}</p>
                      <p>{(elem.price_each).toFixed(2)} €</p>
                      <p>{(elem.quantity * elem.price_each).toFixed(2)} €</p>
                   </article>
@@ -69,7 +76,9 @@ const Order = ({ infos }) => {
                <h3>Total : {order[0].total.toFixed(2)} €</h3>
             </section>
 
-         </section> : <section>Chargement</section>}
+         </section>
+
+         </> : <section>Chargement</section>}
       </main>
    );
 };

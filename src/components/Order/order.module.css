@@ -4,20 +4,32 @@
    align-items: center;
    flex-wrap: nowrap;
 
-   margin: auto;
-   margin: 2vh 0 0 0;
-   background: rgb(75, 49, 36);
-   background: linear-gradient(27deg,
-         rgba(75, 49, 36, 1) 4%,
-         rgba(100, 58, 33, 1) 40%,
-         rgba(198, 171, 110, 1) 86%);
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background-color: rgb(37, 37, 37);
+   margin: 0 auto 5vh auto;
+}
+
+.order button {
+   cursor: pointer;
+   background: #7a3b04;
+   font-size: 1.8rem;
+   letter-spacing: 2px;
+
+   border-radius: 5ex;
+   border: none;
+   padding: 10px 15px;
+   font-weight: 400;
+   width: fit-content;
+   color: whitesmoke;
+   margin: 2vh 0;
+}
+
+.order button:hover {
+   transform: scale(0.97);
 }
 
 .order h1 {
    font-size: 3.75rem;
-   font-weight: 400;
+   font-weight: 500;
    font-style: italic;
    color: #333;
    padding-left: 20px;
@@ -42,11 +54,11 @@
    gap: 4vh;
 
    background-image: url('../../assets/fond.jpg');
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
 
-   width: 768px;
-   height: 1004px;
+   width: 795px;
+   height: 1124px;
 
    margin: 5vh auto;
    padding: 20px 25px;
@@ -131,6 +143,7 @@
 
 .order section section article h3 {
    text-transform: capitalize;
+   font-weight: 400;
    text-align: left;
    width: 150px;
 }
@@ -161,4 +174,16 @@
    border-bottom: solid #333 2px;
    border-radius: 5px;
    padding: 0.7vh 1vw;
+}
+
+@media all and (max-width: 775px) {
+
+   .order {
+      width: 100%;
+      background-color: whitesmoke;
+   }
+
+   .order>section {
+      width: 100%;
+   }
 }
