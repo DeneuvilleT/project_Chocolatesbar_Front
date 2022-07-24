@@ -57,7 +57,7 @@ const Logup = () => {
                   text: `Le mot de passe doit contenir au minimum 2 chiffres, une majusucle au minimumn, 
                            d'un caractére spécial (-, *, ...) et d'une longueur de 8 caractéres minimum.`
                },
-               { type: "submit", value: "Se connecter" }]} />
+               { type: "submit", value: "S'enregistrer" }]} />
 
             <em>{msg === '' ? null : msg}</em>
 

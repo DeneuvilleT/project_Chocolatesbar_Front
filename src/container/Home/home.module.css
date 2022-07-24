@@ -61,6 +61,8 @@
 
    min-height: 400px;
    height: 30vh;
+
+   animation: progression forwards 4s 0s ;
 }
 
 .home figcaption {
@@ -77,6 +79,16 @@
    max-width: 300px;
    width: 20vw;
    color: black;
+}
+
+@keyframes progression {
+   0% {
+      transform: scale(0);
+   }
+
+   100% {
+      transform: scale(1);
+   }
 }
 
 @media all and (max-width: 1301px) {
@@ -100,10 +112,13 @@
    .home figure {
       width: 100vw;
       border-radius: 0%;
+      animation: none;
    }
 }
 
 @media all and (max-width: 540px) {
+
+
 
    .home figcaption {
       font-size: 1.8rem;

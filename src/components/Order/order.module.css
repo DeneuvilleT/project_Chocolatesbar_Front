@@ -5,7 +5,7 @@
    flex-wrap: nowrap;
 
    background-color: rgb(37, 37, 37);
-   margin: 0 auto 5vh auto;
+   margin: 0 auto;
 }
 
 .order button {
@@ -20,7 +20,7 @@
    font-weight: 400;
    width: fit-content;
    color: whitesmoke;
-   margin: 2vh 0;
+   margin: 6vh auto 0 auto;
 }
 
 .order button:hover {

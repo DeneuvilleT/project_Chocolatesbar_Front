@@ -154,12 +154,19 @@
 
 /* search / add product */
 .admin section:nth-child(4) {
-
    display: flex;
    flex-direction: row;
 
    margin-top: 2vh;
    margin-bottom: 2vh;
+}
+
+.admin section:nth-child(4) button {
+   border: none;
+   border-radius: 5ex;
+   background-color: rgb(218, 218, 218);
+   box-shadow: 0 14px 10px rgba(0, 0, 0, 0.075),
+      0 4px 10px rgba(0, 0, 0, 0.048);
 }
 
 .admin hr {
