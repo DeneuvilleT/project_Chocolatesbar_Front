@@ -5,7 +5,15 @@
    align-items: center;
    flex-wrap: wrap;
 
+   background-color: whitesmoke;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   padding-bottom: 5vh;
+   color: #333;
+
    margin: auto;
+   margin-bottom: 6vh;
+   width: 85vw;
 }
 
 .history figure {
@@ -49,7 +57,9 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+   background-color: rgba(230, 230, 230, 0.678);
    overflow-y: scroll;
    text-align: left;
    padding: 0px 50px;
@@ -73,6 +83,13 @@
    text-align: left;
 }
 
+@media all and (max-width: 1301px) {
+
+   .history {
+      width: 100%;
+   }
+}
+
 @media all and (max-width: 1025px) {
 
    .history section {
@@ -86,4 +103,14 @@
       width: 100vw;
       border-radius: 0%;
    }
+}
+
+@media all and (max-width: 751px) {
+
+   .history section {
+      background-color: whitesmoke;
+      box-shadow: none;
+      width: 90%;
+   }
+
 }

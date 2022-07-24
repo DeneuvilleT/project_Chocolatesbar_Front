@@ -4,8 +4,14 @@
    justify-content: center;
    align-items: center;
 
+   background-color: whitesmoke;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   margin: auto;
    margin-bottom: 3vh;
-   width: 100vw;
+
+   width: 85vw;
    color: #333;
 }
 
@@ -70,7 +76,7 @@
    border: none;
    padding: 8px 12px;
    border-radius: 5ex;
-   background-color: rgba(128, 128, 128, 0.226);
+   background-color: rgb(236, 236, 236);
    box-shadow: 0 14px 10px rgba(0, 0, 0, 0.075),
       0 4px 10px rgba(0, 0, 0, 0.048);
 }
@@ -122,6 +128,8 @@
    justify-content: center;
    flex-wrap: wrap;
 
+   background: rgb(75, 49, 36);
+   background: linear-gradient(0deg, rgb(119, 78, 57) 4%, rgba(100, 58, 33, 1) 40%, rgba(198, 171, 110, 1) 86%);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
       inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -130,7 +138,7 @@
    gap: 3vw;
    padding: 2vh 4vw;
 
-   width: 70%;
+   width: 80%;
    max-width: 1500px;
 }
 
@@ -184,7 +192,6 @@
    font-weight: 500;
    font-size: 2.5rem;
 }
-
 
 
 /* Advanced */
@@ -242,9 +249,9 @@
    cursor: pointer;
    font-size: 2rem;
    border-radius: 5ex;
+   background-color: rgb(230, 230, 230);
 
    min-height: 45px;
-   background-color: rgba(150, 150, 150, 0.226);
    box-shadow: 0 14px 10px rgba(0, 0, 0, 0.075),
       0 4px 10px rgba(0, 0, 0, 0.048);
 }
@@ -271,7 +278,15 @@
    justify-content: center;
    align-items: center;
 
-   margin: 1.5vh auto 5vh auto;
+   background-color: whitesmoke;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+   width: 90vw;
+   padding: 5vh 0;
+
+   margin: auto;
+   margin-bottom: 6vh;
    color: #333;
 }
 
@@ -581,7 +596,19 @@
 }
 
 
+@media all and (max-width: 1301px) {
+   .detail {
+      width: 100%;
+      margin-bottom: 0;
+   }
+}
+
 @media all and (max-width: 1215px) {
+
+   .product {
+      width: 100%;
+      margin-bottom: 0;
+   }
 
    /* Product */
    .product>section,
@@ -591,6 +618,10 @@
 
    .product>section div {
       gap: 5vh;
+   }
+
+   .product section:nth-child(2) {
+      width: 100%;
    }
 
    .product section:nth-child(2),
@@ -676,7 +707,6 @@
       padding: 0;
    }
 
-   .product section:nth-child(2),
    .product>div {
       width: 90%;
       box-shadow: none;

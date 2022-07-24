@@ -21,14 +21,15 @@ const Logs = () => {
 
    return (
       <div className={styles.logs}>
-         {isLog ? <Link to={"/customer/profil"} style={{ fontSize: '2.2rem' }} title="Accéder à votre page" >Bonjour {infos.surname}</Link>
-            : <Link to={"/customer/login"}>connexion</Link>}
+         {isLog ? <Link to={"/customer/profil"} style={{ fontSize: '2.2rem', textDecoration:'underline' }} title="Accéder à votre page" >
+            Bonjour {infos.surname}</Link> : <Link to={"/customer/login"}>connexion</Link>}
          
          {infos.status === 'admin' && (
-            <Link to={"/admin"} style={{ fontSize: '2.2rem' }} title="Accéder au panneau d'administration" >Administration</Link>
-         )}
+            <Link to={"/admin"} style={{ fontSize: '2.2rem' }} title="Accéder au panneau d'administration" >
+               Administration</Link>)}
 
-         {isLog ? <FontAwesomeIcon icon={faPowerOff} size='2x' onClick={() => logOff()} /> : <Link to={"/customer/logup"}>inscription</Link>}  
+         {isLog ? <FontAwesomeIcon icon={faPowerOff} size='2x'
+            onClick={() => logOff()} /> : <Link to={"/customer/logup"}>inscription</Link>}  
       </div>
    );
 };

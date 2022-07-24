@@ -30,7 +30,7 @@
 
 .logs svg:hover {
    cursor: pointer; 
-   color: crimson;
+   color: #a54d00;
 }
 
 .logs a:nth-child(1):hover {
@@ -39,7 +39,7 @@
 }
 
 .logs a:nth-child(3):hover {
-   transform: scale(0.95);
+   transform: scale(0.99);
 }
 
 @media all and (max-width: 601px) {

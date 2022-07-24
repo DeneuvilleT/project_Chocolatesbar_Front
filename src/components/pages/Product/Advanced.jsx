@@ -65,7 +65,7 @@ const Advanced = ({ setPage, setResult, setProducts, max, setMsgNot, setHelp }) 
 
          <form className={styles.product} ref={logInputs} onSubmit={(e) => search(e)} >
 
-            <p>Rechercher par pays d'origine des fêves de cacao ou poucentage de pâte de cacao. <br />
+            <p>Rechercher par pays d'origine des fêves de cacao ou pourcentage de pâte de cacao. <br />
                Vous pouvez aussi effectuer une recherche par sorte de chocolat ou encore mélanger vos préférences.</p>
             
             <select>

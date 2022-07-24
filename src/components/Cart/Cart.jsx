@@ -142,14 +142,14 @@ const Cart = ({ infos, isLog }) => {
                   
                   <section>
                      <aside>
-                        <h4>Vos achats *<span>{cartTotal.toFixed(2)} €</span></h4>
+                        <h4>Vos achats<span>{cartTotal.toFixed(2)} €</span></h4>
                         <h4>Livraison{!free ? <span>{tax.toFixed(2)} €</span> :
                            <span style={{ color: "green", letterSpacing: "1px" }}>offerte !</span>}</h4>
                         <hr />
                         <h4>Total<span>{(cartTotal + tax).toFixed(2)} €</span></h4>
 
                         {isLog ? <> <button onClick={() => payment()} >Valider le panier</button> </>
-                           : <> <Link to={'logup'}>Vous devez être connecté pour finaliser votre achat</Link>
+                           : <> <Link to={'/customer/login'}>Vous devez être connecté pour finaliser votre achat</Link>
                               <h2 >Total {cartTotal.toFixed(2)} €</h2> </>}
                      </aside>
 
@@ -160,7 +160,7 @@ const Cart = ({ infos, isLog }) => {
                         </div>
                         <div>
                            <FontAwesomeIcon icon={faCartFlatbedSuitcase} size="4x" />
-                           <p>Frais de port offert à partir de 50 € d'achat *</p>
+                           <p>Frais de port offert à partir de 50 €</p>
                         </div>
                         <div>
                            <FontAwesomeIcon icon={faShieldHeart} size="4x" />
@@ -176,12 +176,12 @@ const Cart = ({ infos, isLog }) => {
 
 {/* Payment */}
          
-         {clientSecret && (
+         {clientSecret && ( cart.length ? 
             <section>
                <Elements options={options} stripe={stripePromise}>
                   <Checkout />
                </Elements>
-            </section>)}
+            </section>:<></>)}
       </main>
    );
 };

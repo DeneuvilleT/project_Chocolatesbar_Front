@@ -6,9 +6,9 @@
 
    width: auto;
    min-width: 320px;
-   
+
    margin: auto 2vw;
-   padding-bottom: 10vh;
+   padding: 0 0 6vh 0;
    border-bottom: groove #333 2px;
 
    gap: 10%;
@@ -90,12 +90,20 @@
       color: whitesmoke;
    }
 
+   .nav a:nth-child(4) svg {
+      padding-bottom: 10px;
+   }
+
    .nav a:hover {
       border-bottom: none;
    }
 }
 
 @media all and (max-width: 650px) {
+
+   .nav {
+      gap: 5px;
+   }
 
    .nav span {
       background-color: rgba(51, 51, 51, 0);

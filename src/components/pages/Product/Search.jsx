@@ -37,6 +37,9 @@ const Search = () => {
       } else if (params.key) {
          readHistory(byName, params.key);
          return
+      } else {
+         readHistory(byName, "St Domingue");
+         return
       };
    }, []);
 
@@ -81,7 +84,7 @@ const Search = () => {
 {/* Search Bar */}
 
             <form ref={logInputs} onSubmit={(e) => search(e)}>
-               <input autoFocus type="text" />
+               <input autoFocus type="text" placeholder='St Domingue ...' />
                <button onClick={() => setHelp(false)} type="submit">
                   <FontAwesomeIcon icon={faMagnifyingGlass} size='2x' />
                </button>
