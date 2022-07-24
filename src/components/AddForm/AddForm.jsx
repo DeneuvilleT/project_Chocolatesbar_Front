@@ -17,7 +17,7 @@ const AddForm = ({ visibility, title, onsubmit, inputs }) => {
          <form className={visibility} ref={logInputs} onSubmit={onsubmit} >
 
             {inputs.map((input, index) => <Fragment key={index}>
-               <label>{input.text}</label>
+               {input.text ? <label>{input.text}</label> : <></>}
                <input
                   type={input.type}
                   maxLength={input.maxLength}

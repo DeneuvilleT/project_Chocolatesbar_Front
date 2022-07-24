@@ -17,7 +17,7 @@
 }
 
 .product hr {
-   width: 80vh;
+   width: 80%;
 }
 
 .product cite {
@@ -202,10 +202,32 @@
    gap: 5vh;
 }
 
+.product>form>div {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+
+   margin: 20px auto;
+   gap: 50px;
+}
+
+.product>form>div>div {
+   display: flex;
+   flex-direction: row;
+}
+
+.product>form>div>div p {
+   font-size: 2rem;
+   font-style: italic;
+   width: fit-content;
+}
+
 .product>form label {
-   padding: 8px;
+   padding: 8px 15px;
    min-width: 75px;
    text-align: center;
+   cursor: default;
 }
 
 .product input[type="range"] {
@@ -222,12 +244,12 @@
 
    min-height: 45px;
    background-color: rgba(150, 150, 150, 0.226);
-   box-shadow: 0 14px 20px rgb(0, 0, 0, 0.12),
-      0 14px 25px rgba(0, 0, 0, 0.20);
+   box-shadow: 0 14px 10px rgba(0, 0, 0, 0.075),
+      0 4px 10px rgba(0, 0, 0, 0.048);
 }
 
-.product form select {
-   padding: 0 10px;
+.product>form select {
+   padding: 0 15px;
 }
 
 .product form p {
@@ -644,6 +666,14 @@
 }
 
 @media all and (max-width: 545px) {
+
+   .product>form>div input[type="range"] {
+      margin: 10px;
+   }
+
+   .product>form>div>div p {
+      padding: 0;
+   }
 
    .product section:nth-child(2),
    .product>div {

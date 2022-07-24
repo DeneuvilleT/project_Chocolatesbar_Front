@@ -65,7 +65,7 @@ const Advanced = ({ setPage, setResult, setProducts, max, setMsgNot, setHelp }) 
 
          <form className={styles.product} ref={logInputs} onSubmit={(e) => search(e)} >
 
-            <p>Rechercher par pays d'origine des fêves de cacao ou le poucentage de pâte de cacao. <br />
+            <p>Rechercher par pays d'origine des fêves de cacao ou poucentage de pâte de cacao. <br />
                Vous pouvez aussi effectuer une recherche par sorte de chocolat ou encore mélanger vos préférences.</p>
             
             <select>
@@ -79,10 +79,16 @@ const Advanced = ({ setPage, setResult, setProducts, max, setMsgNot, setHelp }) 
             </select>
 
 {/* Display Percent */}
-            
-            <input onChange={(e) => setPercent(e.target.value)} type="range" min="20" max="100" />
-            <label>{percent} %</label>
 
+            <div>
+               <label>Pourcentage de cacao <span style={{ color: '#b07f00', fontWeight: '500' }}>{percent}</span> %</label>
+               <div>
+                  <p>20 %</p>
+                  <input onChange={(e) => setPercent(e.target.value)} type="range" min="20" max="100" />
+                  <p>100 %</p>
+               </div>
+            </div>
+            
 {/* Display Category */}
             
             <select>
