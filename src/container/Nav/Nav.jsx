@@ -2,6 +2,7 @@ import { faBook, faCandyCane, faCartShopping, faHome } from '@fortawesome/free-s
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useLocation } from 'react-router-dom';
 import { saveDetail } from '../../slices/datasSlices';
 import { priceTotal } from '../../slices/cartSlices';
 import { Link } from 'react-router-dom';
@@ -13,6 +14,7 @@ const Nav = () => {
 
    const { cart, cartLength } = useSelector((state) => ({ ...state.cart }));
 
+   const location = useLocation();
    const dispatch = useDispatch();
 
    const [screenSize, getDimension] = useState({
@@ -40,15 +42,19 @@ const Nav = () => {
 
    return (
       <nav className={styles.nav}>
-         <Link to={"/"}>{screenSize.dynamicWidth > 650 ? 'Accueil' : <FontAwesomeIcon icon={faHome} />}</Link>
+         <Link style={{ borderBottom: `${location.pathname === '/' ? 'solid #b07f00 3px' : 'none'}`  }}
+            to={"/"}>{screenSize.dynamicWidth > 650 ? 'Accueil' : <FontAwesomeIcon icon={faHome} />}</Link>
          
-         <Link to={"/product/search"} onClick={() => dispatch(saveDetail(null))}>
+         <Link style={{ borderBottom: `${location.pathname === '/product/search' ? 'solid #b07f00 3px' : 'none'}` }}
+            to={"/product/search"} onClick={() => dispatch(saveDetail(null))}>
             {screenSize.dynamicWidth > 650 ? 'Catalogue' : <FontAwesomeIcon icon={faCandyCane} />}
          </Link>
 
-         <Link to={"/history"}>{screenSize.dynamicWidth > 650 ? 'Historique' : <FontAwesomeIcon icon={faBook} />}</Link>
+         <Link style={{ borderBottom: `${location.pathname === '/history' ? 'solid #b07f00 3px' : 'none'}` }}
+            to={"/history"}>{screenSize.dynamicWidth > 650 ? 'Historique' : <FontAwesomeIcon icon={faBook} />}</Link>
 
-         <Link to={"/cart"}>{screenSize.dynamicWidth > 650 ? 'Panier' : <FontAwesomeIcon icon={faCartShopping} />}
+         <Link style={{ borderBottom: `${location.pathname === '/cart' ? 'solid #b07f00 3px' : 'none'}` }}
+            to={"/cart"}>{screenSize.dynamicWidth > 650 ? 'Panier' : <FontAwesomeIcon icon={faCartShopping} />}
             {cartLength === 0 ? <></> : <span>{cartLength}</span>}</Link>
       </nav>
    );

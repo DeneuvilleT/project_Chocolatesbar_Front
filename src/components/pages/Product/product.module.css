@@ -18,6 +18,7 @@
 
 .product hr {
    width: 80%;
+   max-width: 1200px;
 }
 
 .product cite {
