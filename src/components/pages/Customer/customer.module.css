@@ -432,3 +432,12 @@
       padding: 0 auto;
    }
 }
+
+@media all and (max-width: 545px) {
+
+   .login,
+   .customer {
+      padding-top: 200px;
+   }
+
+}

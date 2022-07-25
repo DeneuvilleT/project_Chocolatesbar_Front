@@ -14,7 +14,7 @@ const Footer = () => {
          </div>
 
          <div>
-            <a href='https://www.linkedin.com/in/thomas-deneuville-68965994/'><FontAwesomeIcon icon={faLinkedin} size='4x' /></a >
+            <a href='https://www.linkedin.com/in/thomas-deneuville-68965994'><FontAwesomeIcon icon={faLinkedin} size='4x' /></a >
             <a href='https://github.com/DeneuvilleT'><FontAwesomeIcon icon={faGithubSquare} size='4x' /></a >
          </div>
 

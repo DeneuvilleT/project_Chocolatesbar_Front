@@ -11,8 +11,10 @@ const Home = () => {
   return (
     <main className={styles.home}>
 
-      <h1>Bienvenue</h1>
-      <h1>sur le Chocolate's Bar !</h1>
+      <div>
+      <h1>Bienvenue <span>sur le</span></h1>
+      <h1> Chocolate's Bar</h1>
+      </div>
 
       <figure>
         <figcaption>Venez découvrir plus de 2500 références de tablettes de chocolat de toutes origines !</figcaption>

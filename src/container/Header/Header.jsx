@@ -1,6 +1,6 @@
 import styles from '../Header/header.module.css';
 import Logs from '../../components/Logs/Logs';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo_png.png';
 import Nav from '../Nav/Nav';
 
 const Header = () => {

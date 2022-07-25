@@ -319,3 +319,11 @@
    }
 
 }
+
+@media all and (max-width: 545px) {
+
+   .cart {
+      padding-top: 200px;
+   }
+
+}

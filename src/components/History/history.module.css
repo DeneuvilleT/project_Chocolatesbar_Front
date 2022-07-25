@@ -48,6 +48,7 @@
    font-weight: 450;
    font-size: 3rem;
    padding: 20px;
+
    width: 300px;
    z-index: 2;
    color: black;
@@ -107,10 +108,18 @@
 }
 
 @media all and (max-width: 751px) {
+   .history {
+      padding-top: 200px;
+   }
+
+   .history h1 {
+      padding: 10px;
+   }
 
    .history section {
       background-color: whitesmoke;
       box-shadow: none;
+
       width: 90%;
    }
 

@@ -1,9 +1,9 @@
 .header {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-start;
    align-content: space-between;
-   align-items: center;
+   align-items: flex-start;
    flex-wrap: wrap;
 
    background-color: whitesmoke;
@@ -12,14 +12,19 @@
       inset 0px 4px 4px rgba(0, 0, 0, 0);
       
    width: 100vw;
-   height: auto;
+   height: 200px;
 }
 
 .header figcaption {
    flex: 1;
-   margin-top: -2px;
+   z-index: 3;
+   margin-top: -4px;
    margin-left: -2px;
    margin-right: 4vw;
+}
+
+.header img {
+   width: 275px;
 }
 
 .header nav {
@@ -35,9 +40,11 @@
       margin: auto;
    }
 
+   .header figcaption {
+      margin: 0;
+   }
+
    .header figcaption>img {
-      width: 100%;
-      min-width: 222px;
-      max-width: 250px;
+      max-width: 222px;
    }
 }
